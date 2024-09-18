@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Univerzalni konverter brojnih sistema</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="kontejner">
+      <span class="kreator">(Made by: Sarah Mekić III-2)</span>
+      <h1>Univerzalni konverter brojnih sistema</h1>
+
+      <div class="konverter">
+        <label for="uneseniBroj">Broj:</label>
+        <input type="text" id="uneseniBroj" placeholder="Unesi broj" />
+      </div>
+
+      <div class="konverter">
+        <label for="bazaUlaz">Konvertuj iz:</label>
+        <select id="bazaUlaz">
+          <option value="2">Binarni (Baza 2)</option>
+          <option value="8">Oktalni (Baza 8)</option>
+          <option value="10" selected>Decimalni (Baza 10)</option>
+          <option value="16">Heksadecimalni (Baza 16)</option>
+        </select>
+      </div>
+
+      <div class="konverter">
+        <label for="bazaIzlaz">Konvertuj u:</label>
+        <select id="bazaIzlaz">
+          <option value="2">Binarni (Baza 2)</option>
+          <option value="8">Oktalni (Baza 8)</option>
+          <option value="10" selected>Decimalni (Baza 10)</option>
+          <option value="16">Heksadecimalni (Baza 16)</option>
+        </select>
+      </div>
+
+      <div class="konverter">
+        <button onclick="konvertuj()">Konvertuj</button>
+      </div>
+
+      <p id="rezultat"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
